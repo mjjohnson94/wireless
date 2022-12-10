@@ -15,8 +15,6 @@ def registerUser():
 
         firstName = request.form['firstName']
         secondName = request.form['lastName']
-        
-     
 
-        return render_template('index.html', text=firstName, x=secondName)
+        return render_template('index.html', )
 
