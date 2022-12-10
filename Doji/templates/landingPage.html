@@ -18,7 +18,7 @@
 <body>
 
     <!--Create container to hold HTML elements for the login page-->
-    <div class="container mt-2"> 
+    <div class="container mt-2" id="x"> 
         <!--Create row which will hold the columns-->
         <div class="row">
             <!--Create column which will take 6 places on large/medium screens, 12 places on small screens-->
@@ -92,35 +92,48 @@
 
                         <h4>W i r e l e s s</h4>
                         <h1>Register here!</h1>
-                <form>
 
-                    <div class="row">
+                
+
+                <form action="{{ url_for('registerUser') }}" method="post" name="registerUser">
+                   
+                    <div class="row"> 
                         <div class="col-sm-12 col-lg-6">
-                            <input id="registerField" type="text" class="form-control mb-1 form-control-sm" placeholder="First name">
+                            <input id="registerField" name="firstName" type="text" class="form-control mb-1 form-control-sm" placeholder="First name">
                             </div>
                         <div class="col">
-                            <input id="registerField" type="text" class="form-control mb-1 form-control-sm" placeholder="Last name">
+                            <input id="registerField" name="lastName" type="text" class="form-control mb-1 form-control-sm" placeholder="Last name">
                             </div>
                         </div>
 
                         <div class="row">
                               <div class="col-sm-12 col-lg-6">
-                               <input id="registerField" type="text" class="form-control mb-1 form-control-sm" placeholder="E-Mail Address">
+                               <input id="registerField" name="eMail" type="text" class="form-control mb-1 form-control-sm" placeholder="E-Mail Address">
                                </div>
                         <div class="col">
-                                   <input id="registerField" type="text" class="form-control mb-2 form-control-sm" placeholder="Phone Number">
+                                   <input id="registerField" name="phoneNumber" type="text" class="form-control mb-1 form-control-sm" placeholder="Phone Number">
                               </div>
                         </div>
 
+                        <h1>Password</h1>
 
                         <div class="row">
                             <div class="col-sm-12 col-lg-6">
-                                  <h id="Password">Password</h>
-                                  <input id="passwordField" type="password" class="form-control form-control-sm mt-2 mb-1" placeholder="Password...">
-                                  <input id="passwordField" type="password" class="form-control form-control-sm" placeholder="Re-type Password...">  
-                                  <button id="registerButton2" class="btn btn-outline-primary"> Register now!</button>
-                            </div>   
-                        </div>    
+                             <input id="registerField" name="password" type="password" class="form-control mb-1 form-control-sm" placeholder="Password">
+                             </div>
+                      <div class="col">
+                                 <input id="registerField" name="confirmPassword" type="password" class="form-control mb-1 form-control-sm" placeholder="Confirm Password...">
+                            </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-3">
+
+                      <button id="registerButton2" class="btn btn-outline-primary"> Register</button>
+
+                    </div>
+                </div>
+
                            
                                
                 </form>

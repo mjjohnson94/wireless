@@ -96,8 +96,8 @@
       font-weight: lighter;
       font-size: 16px;
       border-radius: 20px;
-      padding: 14px;
-      margin-top: 12px;
+      margin-top: 2px;
+      float: left;
     
   }
 
