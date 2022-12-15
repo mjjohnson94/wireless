@@ -27,3 +27,11 @@ sqlQuery = '''CREATE TABLE registered_users (
 # Execute the database operation, the SQL command can be written within the brackets of the cursor.execute method or assigned to a variable 
 
 cursor.execute(sqlQuery)
+
+# Close the cursor once the command has been executed and the connection is no longer required for that specific task 
+
+cursor.close()
+
+# Close the connection once the command has been executed and the connection is no longer required for that specific task
+
+conn.close()
