@@ -18,8 +18,8 @@ cursor = conn.cursor()
 
 sqlQuery = '''CREATE TABLE registered_users (
           ID INT PRIMARY KEY NOT NULL,
-          FIRST_NAME CHAR,
-          LAST_NAME CHAR,
+          FIRST_NAME CHAR(500),
+          LAST_NAME CHAR(500),
           EMAIL_ADDRESS VARCHAR,
           PHONE_NUMBER INT,
           PASSWORD VARCHAR)'''

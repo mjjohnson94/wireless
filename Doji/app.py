@@ -20,6 +20,8 @@ def registerUser():
         password = request.form['password']
         confirmPassword = request.form['confirmPassword']
 
+        ID = 1
+
         # Establish connection to PostgreSQL database 
 
         conn = psycopg2.connect(
@@ -30,8 +32,11 @@ def registerUser():
 
         cur = conn.cursor()
 
-        ID = 1
+        cur.execute("INSERT INTO registered_users(ID, FIRST_NAME, LAST_NAME, EMAIL_ADDRESS, PHONE_NUMBER, PASSWORD) VALUES(%s, %s, %s, %s, %s, %s)",
+        (ID, firstName, secondName, eMail, phoneNumber, password))
 
+        conn.commit()
+        cur.close()
+        conn.close()
 
-        return render_template('index.html', cur.execute(sqlQuery))
-
+        return render_template('index.html')
