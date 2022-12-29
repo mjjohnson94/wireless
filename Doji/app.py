@@ -18,7 +18,6 @@ def registerUser():
         eMail = request.form['eMail']
         phoneNumber = request.form['phoneNumber']
         password = request.form['password']
-        confirmPassword = request.form['confirmPassword']
 
         ID = 1
 
@@ -40,3 +39,17 @@ def registerUser():
         conn.close()
 
         return render_template('index.html')
+
+
+@app.route('/logIn', methods=['POST'])
+def logIn():
+
+        eMail =request.form['Email']
+        password = request.form['PassW']
+
+        print(eMail)
+        print(password)
+
+        return render_template('index.html')
+
+
