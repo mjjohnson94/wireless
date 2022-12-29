@@ -44,11 +44,18 @@ def registerUser():
 @app.route('/logIn', methods=['POST'])
 def logIn():
 
-        eMail =request.form['Email']
+        eMail = request.form['Email']
         password = request.form['PassW']
 
-        print(eMail)
-        print(password)
+        conn = psycopg2.connect(
+        host="localhost",
+        database="pythontestdb",
+        user="postgres",
+        password="AAA009wn73ed")
+
+        cur = conn.cursor()
+
+
 
         return render_template('index.html')
 
