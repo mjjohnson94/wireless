@@ -1,0 +1,103 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #323ED1; 
+
+
+
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 65%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: black;
+    text-align: right;
+    font-size: 28px;
+    font-weight: lighter;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #passwordHelpBlock    {
+      font-size: 10px;
+      padding-left: 1px;
+      line-height: 1px;
+    
+  }
+
+  h4    {
+      font-size: 22px;
+      text-align: left;
+      color: #323ED1;
+      font-weight: lighter;
+      font-family: 'Nexa', sans-serif;
+  }
+
+ 
+  #registerField    {
+      border-radius: 55px;
+      font-weight: lighter;
+      font-family: 'Nexa', sans-serif;
+
+  }
+
+  #passwordField    {
+    border-radius: 55px;
+    font-weight: lighter;
+    font-family: 'Nexa', sans-serif;
+
+}
+
+  #Password {
+    font-size: 22px;
+    font-weight: lighter;
+    padding-bottom: 5px;
+    float: left;
+    margin-top: 8px;
+  }
+
+  #banner   {
+      background-color: #323ED1;
+      color: white;
+      text-align: center;
+      padding: 5px;
+      margin-top: 10px;
+      border-radius: 55px;
+      font-family: 'Nexa', sans-serif;
+      font-weight: lighter;
+    
+  }
+
+  #registerButton2  {
+      background-color: #323ED1;
+      border-color: white;
+      color: white;
+      font-weight: lighter;
+      font-size: 16px;
+      border-radius: 20px;
+      margin-top: 2px;
+      float: left;
+    
+  }
+
