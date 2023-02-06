@@ -15,7 +15,6 @@
 </head>
 
 
-
 <body>
   
 <!--Create container to hold HTML elements for the login page-->
@@ -96,21 +95,25 @@
 <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
 </svg>
            
-<!--Main banner header-->
+<!--Main banner header - Company name banner-->
 <h3>W i r e | e s s</h3>
 
-
+<!--Secondary header - Sign up-->
 <h2>Not a member?<br>
 Sign up to our community...</h2>   
 
+<!--Form with Python function to execute new window load upon click-->
 <form action="{{ url_for('registerUser') }}" method="POST" name="registerUser">
 <button type="submit" id="registerButton" class="btn">Register</button>
 </form>
                         
 
+<!--Company name banner - small,top right hand side of parent element-->
 <h4>W i r e l e s s</h4>
 
     
+
+
               </div>
          </div>
      </div>

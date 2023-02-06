@@ -11,6 +11,12 @@ def landingPage():
         return render_template('landingPage.html')
 
 
+@app.route('/registerUser', methods=['POST'])
+def registerUser():
+
+        return render_template('registerUser.html')
+
+
 # @app.route('/', methods=['POST'])
 # def registerUser():
 
@@ -62,12 +68,9 @@ def logIn():
         if len(x) > 0:
                 return render_template('loggedIn.html')
         else:
-                return render_template('logInFail.html')
+                return render_template('index.html')
 
 
-@app.route('/registerUser', methods=['POST'])
-def registerUser():
 
-        return render_template('registerUser.html')
 
 
