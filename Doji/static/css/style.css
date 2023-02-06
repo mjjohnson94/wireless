@@ -42,6 +42,13 @@ html, body  {
     font-weight: lighter;
 }
 
+#registerButtonForm     {
+    background-color: #323ED1;
+    border-radius: 55px;
+    border-color: transparent;
+
+}
+
 
 h1  {
     font-size: 22px;
@@ -117,7 +124,24 @@ p1  {
     font-size: 12px;
 }
 
+#registerCard   {
+    background-color: #323ED1;
+    color: whitesmoke;
+    border-radius: 2px;
+}
 
-#x  {
-    margin-top: 100px;
+#registerForm {
+    background-color: white;
+    border-radius: 2px;
+    font-family: 'Nexa', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+hr  {
+    background-color: #323ED1;
+}
+
+#X  {
+    margin-left: 304px;
 }

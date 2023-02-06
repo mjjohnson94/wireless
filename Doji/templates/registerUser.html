@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<script src="sweetalert2.all.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+
+<!--Create container to hold HTML elements for the login page-->
+<div class="container"> 
+    <!--Create row which will hold the columns-->
+<div class="row">
+        <!--Create column which will take 6 places on large/medium screens, 12 places on small screens-->
+        <!--Assign ID of 'leftCard' as this element will form the left card of the login page-->
+<div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-12" id="registerCard">
+          
+<!--Image-->
+<svg id="musicNote" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
+<path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
+<path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
+<path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
+</svg>
+
+<!--Headers-->
+<h1 id="registerHeader">Welcome to Wireless...</h1>
+<h2 id="RegisterSubHeader">Become a member today:</h2>
+
+        </div>
+    </div>
+</div>
+
+
+<!--Create container to hold HTML elements for the login page-->
+<div class="container"> 
+    <!--Create row which will hold the columns-->
+<div class="row">
+<!--Create column which will take 6 places on large/medium screens, 12 places on small screens-->
+<div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-12" id="registerForm">
+    
+<!--Line-->
+<hr>
+<!--Line-->
+
+
+<!--Create form element-->
+<form>
+
+
+
+<!--Form-group class for E-Mail address (user input), margin bottom 1, margin top 3-->
+<div class="form-group mb-1 mt-3">
+            <label id="inputLabel">Email address</label>
+            <input type="email" class="form-control form-control-sm" id="Email" aria-describedby="emailHelp" placeholder="Enter email">
+            <!--Muted text to add information next to the input-->
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+</div>
+
+
+<!--Form-group class for Username (user input), margin bottom 1-->
+<div class="form-group mb-1">
+    <label id="inputLabel">Username</label>
+    <input type="username" class="form-control form-control-sm" id="Username" placeholder="Username">
+</div>
+
+
+<!--Form-group class for Password (user input), margin bottom 1-->
+<div class="form-group mb-1">
+    <label id="inputLabel">Password</label>
+    <input type="password" class="form-control form-control-sm" id="Password" placeholder="Password">
+    <!--Muted text to add information next to the input-->
+    <small id="usernameHelp" class="form-text text-muted">8-16 characters, please include at least one numeric & one special character</small>
+</div>
+
+
+<!--Form-group class for Confirm Password (user input), margin bottom 1-->
+<div class="form-group mb-1">
+    <label id="inputLabel">Confirm Password</label>
+    <input type="password" class="form-control form-control-sm" id="confirmPassword" placeholder="Confirm Password...">
+</div>
+
+
+<!--Form-group class for Phone Number, margin bottom 1-->
+<div class="form-group mb-1">
+    <label id="inputLabel">Phone Number</label>
+    <input type="phoneNumber" class="form-control form-control-sm" id="phoneNumber" placeholder="Phone Number">
+</div>
+
+
+<!--Submit button -->
+<button id="registerButtonForm" type="submit" class="btn btn-primary offset-5 btn mt-3 mb-3">Submit
+</button>
+            
+
+<!--Form closing tag-->
+</form>
+
+    </div> 
+</div>
+
+
+<!--Body closing tag-->
+</body>
+ 
+
