@@ -17,35 +17,32 @@ def registerUser():
         return render_template('registerUser.html')
 
 
-# @app.route('/', methods=['POST'])
-# def registerUser():
+@app.route('/registerUser', methods=['POST'])
+def newUserCommit():
 
-#     firstName = request.form['firstName']
-#     secondName = request.form['lastName']
-#     eMail = request.form['eMail']
-#     phoneNumber = request.form['phoneNumber']
-#     password = request.form['password']
 
-#     ID = 3
+    Username = request.form['Username']
+    eMail = request.form['Email']
+    password = request.form['Password']
+
+    ID = 3
 
 #     # Establish connection to PostgreSQL database
 
-#     conn = psycopg2.connect(
-#         host="localhost",
-#         database="pythontestdb",
-#         user="postgres",
-#         password="AAA009wn73ed")
+    conn = psycopg2.connect(
+        host="localhost",
+        database="pythontestdb",
+        user="postgres",
+        password="AAA009wn73ed")
 
-#     cur = conn.cursor()
+    cur = conn.cursor()
 
-#     cur.execute("INSERT INTO registered_users(ID, FIRST_NAME, LAST_NAME, EMAIL_ADDRESS, PHONE_NUMBER, PASSWORD) VALUES(%s, %s, %s, %s, %s, %s)",
-#                 (ID, firstName, secondName, eMail, phoneNumber, password))
+    cur.execute("INSERT INTO registered_users(ID, USERNAME, EMAIL_ADDRESS, PASSWORD) VALUES(%s, %s, %s, %s)",
+                (ID, Username, eMail, password))
 
-#     conn.commit()
-#     cur.close()
-#     conn.close()
-
-#     return render_template('index.html')
+    conn.commit()
+    cur.close()
+    conn.close()
 
 
 @app.route('/logIn', methods=['POST'])
@@ -68,7 +65,7 @@ def logIn():
         if len(x) > 0:
                 return render_template('loggedIn.html')
         else:
-                return render_template('index.html')
+                return render_template('logInFail.html')
 
 
 
