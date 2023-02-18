@@ -18,7 +18,11 @@ def registerUser():
 
 @app.route('/submitUser', methods=['POST'])
 def submitUser():
+
+        email = request.form.get('Email2')
+        print(email)
         
+
         return render_template('index.html')
 
 
