@@ -1,4 +1,3 @@
-from telnetlib import theNULL
 from flask import Flask, render_template, request
 import pandas as pd
 import psycopg2
@@ -15,34 +14,12 @@ def landingPage():
 def registerUser():
 
         return render_template('registerUser.html')
+        
 
-
-@app.route('/registerUser', methods=['POST'])
-def newUserCommit():
-
-
-    Username = request.form['Username']
-    eMail = request.form['Email']
-    password = request.form['Password']
-
-    ID = 3
-
-#     # Establish connection to PostgreSQL database
-
-    conn = psycopg2.connect(
-        host="localhost",
-        database="pythontestdb",
-        user="postgres",
-        password="AAA009wn73ed")
-
-    cur = conn.cursor()
-
-    cur.execute("INSERT INTO registered_users(ID, USERNAME, EMAIL_ADDRESS, PASSWORD) VALUES(%s, %s, %s, %s)",
-                (ID, Username, eMail, password))
-
-    conn.commit()
-    cur.close()
-    conn.close()
+@app.route('/submitUser', methods=['POST'])
+def submitUser():
+        
+        return render_template('index.html')
 
 
 @app.route('/logIn', methods=['POST'])

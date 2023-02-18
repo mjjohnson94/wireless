@@ -40,13 +40,8 @@ html, body  {
     margin-bottom: 40px;
     font-size: 14px;
     font-weight: lighter;
-}
-
-#registerButtonForm     {
-    background-color: #323ED1;
-    border-radius: 55px;
-    border-color: transparent;
-
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
 }
 
 
@@ -56,7 +51,9 @@ h1  {
     padding-top: 25px;
     padding-bottom: 5px;
     text-align: left;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 
 h2  {
     font-size: 18px;
@@ -64,18 +61,18 @@ h2  {
     text-align: center;
     padding-bottom: 20px;
     color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 h3  {
-    font-size: 42px;
+    font-size: 24px;
     padding-top: 75px;
     padding-bottom: 20px;
+    font-weight: lighter;
     color: white;
     text-align: center;
-    font-family: 'Nexa', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                                                 
-    
-  
 }
 
 
@@ -124,24 +121,16 @@ p1  {
     font-size: 12px;
 }
 
-#registerCard   {
-    background-color: #323ED1;
-    color: whitesmoke;
-    border-radius: 2px;
-}
-
-#registerForm {
-    background-color: white;
-    border-radius: 2px;
-    font-family: 'Nexa', sans-serif;
-    font-size: 14px;
-    font-weight: lighter;
-}
-
-hr  {
-    background-color: #323ED1;
-}
 
 #X  {
     margin-left: 304px;
+}
+
+
+h2  {
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
 }
