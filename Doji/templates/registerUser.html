@@ -47,15 +47,13 @@
 <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-12" id="registerForm">
     
 
-
-
 <!--Create form element-->
 <form action="{{ url_for('submitUser') }}" method="POST" name="submitUser">
 
 <!--Form-group class for E-Mail address (user input), margin bottom 1, margin top 3-->
 <div class="form-group mb-1 mt-3">
             <label id="inputLabel">Email address</label>
-            <input type="email" class="form-control form-control-sm" id="Email" aria-describedby="emailHelp" placeholder="Enter email">
+            <input name="email_Register" type="email" class="form-control form-control-sm" aria-describedby="emailHelp" placeholder="Enter email">
             <!--Muted text to add information next to the input-->
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 </div>
@@ -64,14 +62,14 @@
 <!--Form-group class for Username (user input), margin bottom 1-->
 <div class="form-group mb-1">
     <label id="inputLabel">Username</label>
-    <input name="Email" type="username" class="form-control form-control-sm" id="Username" placeholder="Username">
+    <input name="username_Register" type="username" class="form-control form-control-sm" placeholder="Username">
 </div>
 
 
 <!--Form-group class for Password (user input), margin bottom 1-->
 <div class="form-group mb-1">
     <label id="inputLabel">Password</label>
-    <input name="Password" type="password" class="form-control form-control-sm" id="Password" placeholder="Password">
+    <input name="password_Register" type="password" class="form-control form-control-sm" id="Password" placeholder="Password">
     <!--Muted text to add information next to the input-->
     <small id="usernameHelp" class="form-text text-muted">8-16 characters, please include at least one numeric & one special character</small>
 </div>
@@ -80,7 +78,7 @@
 <!--Form-group class for Confirm Password (user input), margin bottom 1-->
 <div class="form-group mb-1">
     <label id="inputLabel">Confirm Password</label>
-    <input type="password" class="form-control form-control-sm" id="confirmPassword" placeholder="Confirm Password...">
+    <input type="confirmPassword_Register" class="form-control form-control-sm" id="confirmPassword" placeholder="Confirm Password...">
 </div>
 
 
@@ -92,8 +90,7 @@
 
 
 <!--Submit button -->
-<button id="registerButtonForm" type="submit" class="btn btn-primary offset-5 btn mt-3 mb-3">Submit
-</button>
+<button id="registerButtonForm" type="submit" class="btn btn-primary offset-5 btn mt-3 mb-3">Submit</button>
             
 
 </div> 

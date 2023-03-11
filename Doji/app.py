@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+from numpy import record
 import pandas as pd
 import psycopg2
 
@@ -19,12 +20,23 @@ def registerUser():
 @app.route('/submitUser', methods=['POST'])
 def submitUser():
 
-        email = request.form.get('Email2')
-        print(email)
+        ID = 0
+        email = request.form.get('email_Register')
+        username = request.form.get('username_Register')
+        password = request.form.get('password_Register')
+
+        conn = psycopg2.connect(
+        host="localhost",
+        database="pythontestdb",
+        user="postgres",
+        password="AAA009wn73ed")
+
+        cur = conn.cursor()
+
+        cur.execute(""" INSERT INTO REGISTERED_USERS (ID, USERNAME, EMAIL_ADDRESS, PASSWORD) VALUES (%s, %s, %s, %s)""", (ID, email, username, password,))
+
+
         
-
-        return render_template('index.html')
-
 
 @app.route('/logIn', methods=['POST'])
 def logIn():
