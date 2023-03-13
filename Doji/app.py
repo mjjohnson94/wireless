@@ -35,7 +35,7 @@ def submitUser():
         cur = conn.cursor()
 
         query = """ INSERT INTO REGISTERED_USERS (ID, USERNAME, EMAIL_ADDRESS, PASSWORD) VALUES (%s, %s, %s, %s) """
-        record = (ID, email, username, password)
+        record = (ID, username, email, password)
 
         cur.execute(query, record)      
         conn.commit()
