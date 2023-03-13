@@ -92,7 +92,6 @@ def logIn():
         query = 'SELECT * FROM registered_users WHERE email_address LIKE %s AND password LIKE %s' 
         record = (eMail, password)
 
-
         # Execute the query which will insert the record into the relevant database table 
         cur.execute(query, record)  
         
@@ -103,7 +102,7 @@ def logIn():
         # The email/password columns in the PostgreSQL database accepts unique values only, meaning there should only be one instance of each email address & password combination
         if len(recordValidation) > 0:
                 return render_template('userHome.html')
-                
+
         # If there are no records,  then the user does not have valid login credentials and is thereby directed to the login fail HTML DOM
         else:
                 return render_template('logInFail.html')
