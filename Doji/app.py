@@ -1,3 +1,4 @@
+from aem import con
 from flask import Flask, render_template, request
 from numpy import record
 import pandas as pd
@@ -33,9 +34,13 @@ def submitUser():
 
         cur = conn.cursor()
 
-        cur.execute(""" INSERT INTO REGISTERED_USERS (ID, USERNAME, EMAIL_ADDRESS, PASSWORD) VALUES (%s, %s, %s, %s)""", (ID, email, username, password,))
+        query = """ INSERT INTO REGISTERED_USERS (ID, USERNAME, EMAIL_ADDRESS, PASSWORD) VALUES (%s, %s, %s, %s) """
+        record = (ID, email, username, password)
 
-
+        cur.execute(query, record)      
+        conn.commit()
+  
+        return render_template('index.html')
         
 
 @app.route('/logIn', methods=['POST'])
