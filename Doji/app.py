@@ -64,7 +64,7 @@ def submitUser():
         conn.commit()
         
         # Return new DOM named userHome.html
-        return render_template('userHome.html')
+        return render_template('userHome.html', username)
 
 
 ## Create function to handle existing user login 
