@@ -12,64 +12,89 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icons.css" integrity="sha512-Sq1qdqbXHnQ3rmftdNCVwU83vZtDzIWc0HVPj6D358xGpXAiFL0/U3KS9KE3bQdxL4Ndk4GEdIsBGOwvqWmikw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+<script src="glider.js"></script>
+<link rel="stylesheet" type="text/css" href="glider.css">
+
 </head>
+
+</style>
 
 <body>
 
     <div class="container">
     <div class="row">
-        <div class="col-lg-8 col-md-8 col-sm-12" id="NetBalance">
-        <div>
-                <canvas id="myChart"></canvas>
-        </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-12" id="Accounts">Your Accounts</div>
-        </div>
-
-       
-          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-          <script>
-
-            const ctx = document.getElementById('myChart');
-          
-            new Chart(ctx, {
-              type: 'line',
-              data: {
-                labels: ['Jan-23', 'Feb-23', 'Mar-23', 'Apr-23', 'May-23', 'Jun-23'],
-                datasets: [{
-                  label: 'Total Balance',
-                  data: [1200, 1900, 1300, 1500, 1200, 1300],
-                  borderWidth: 2,
-                  borderColor: '#323ED1',
-                  backgroundColor: '#323ED1',
-                }]
-              },
-
-              options: {
-                  scales: {
-
-                  x: {
-                  grid: {
-                  display: false}},
-
-                  y: {
-                  grid: {
-                  display: false}}
+    <div class="col-lg-8 col-md-8 col-sm-12" id="NetBalance">
                 
-                }}})
+                <div>
+                <canvas id="netBalance"></canvas>
+                
+
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script>
+        
+                const NetBalance = document.getElementById('netBalance');
+                
+                new Chart(NetBalance, {
+      
+                  type: 'line',
+                  
+                      data: {
+                      labels: ['Jan-23', 'Feb-23', 'Mar-23', 'Apr-23', 'May-23', 'Jun-23'],
+                      datasets: [{
+                      label: 'Total Balance',
+                      data: [12000, 19000, 16000, 15000, 17000, 20000],
+                      borderWidth: 2,
+                      borderColor: '#323ED1',
+                      backgroundColor: '#323ED1',
+                      }]
+                    },
+      
+                    options: {
+                        scales: {
+      
+                        x: {
+                        grid: {
+                        display: false}},
+      
+                        y: {
+                        grid: {
+                        display: false}}
+                      
+                      }}})
+      
+                </script>
+                
+      </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-12" id="Accounts">Your Accounts
+
+      
+
+      </div>
+      </div>
+      </div>
 
 
-          </script>
-          
-           
+      <div class="container">
+      <div class="row">
+      <div class="col-sm">Recent Transactions</div>
+      <div class="col-sm">Col-SM
+        
 
-    <div class="row">
-        <div class="col-sm-4">Recent Transactions</div>
+        <div>
+        
+
+
+   
+
       </div>
     </div>
 
+      <div class="col-sm">Col-SM</div>
+
+      </div>
+      </div>
     
 
 </body>
