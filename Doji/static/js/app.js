@@ -53,3 +53,37 @@
 //       display: false}}
     
 //     }}})
+
+{/* <script>
+        
+const NetBalance = document.getElementById('netBalance');
+
+new Chart(NetBalance, {
+
+  type: 'line',
+
+      data: {
+      labels: ['Jan-23', 'Feb-23', 'Mar-23', 'Apr-23', 'May-23', 'Jun-23'],
+      datasets: [{
+      label: 'Cumulative Balance',
+      data: [12000, 19000, 16000, 15000, 17000, 20000],
+      borderWidth: 1,
+      borderColor: '#3E54AC',
+      backgroundColor: '#3E54AC',
+      }]
+    },
+
+    options: {
+        scales: {
+
+        x: {
+        grid: {
+        display: false}},
+
+        y: {
+        grid: {
+        display: false}}
+      
+      }}})
+
+</script> */}
