@@ -21,23 +21,25 @@
 
 <div class="container">
 
-
 <div class="row">
-
 <div class="col-lg-4">
-<h1 id="Header">myFinance</h1>  
+
+
+<h1 id="Header">myMoney</h1>  
 <p class="text-muted">Welcome back, Mathew!</p>
 <h1 id="Header2">Dashboard</h1>  
 <p class="text-muted">See your latest metrics below:</p>
 
+</div>
+</div>
 
-</div>
-</div>
+
 
 <div class="row">
+<div class="col-lg-8 col-md-12 col-sm-12">
+  <p class="text-muted mt-2">Cumulative Balance</p>
 
 
-<div class="col-lg-6 col-md-12 text-muted">Cumulative Balance
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <div>
@@ -86,20 +88,35 @@ new Chart(NetBalance, {
       }}})
 
 </script> 
+
+</div>
+
+
+  <div class="col-lg-2 col-md-6">
+    <p class="text-muted mt-2">Cash Balance</p>
+    <div class="p-2 border bg-light mt-2 mb-3"><p class="h5">Current Account</p></div>
+    <div class="p-2 border bg-light"><p class="h5">Savings Account</p></div>
+  </div>
+
+
+  <div class="col-lg-2 col-md-6">
+    <p class="text-muted mt-2">Assets / Liabilities</p>
+    <div class="p-2 border bg-light mt-2 mb-3"><p class="h5">Total Debt</p>
+    </div>
+    <div class="p-2 border bg-light"><p class="h5">Investments</p>
+    </div>
+  </div>
+
+
+</div>
+
 </div>
 
 
 
-
 </div>
 </div>
 </div>
-</div>
-</div>
-
-
-
-
 
 
 
