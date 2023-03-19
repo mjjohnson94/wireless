@@ -66,6 +66,20 @@ new Chart(NetBalance, {
       }]
     },
 
+  grid: {
+    show: false,
+     xaxis: {
+        lines: {
+            show: false
+        }
+    },   
+    yaxis: {
+        lines: {
+            show: false
+        }
+    },  
+  },
+
     options: {
 
         plugins:  {
@@ -97,6 +111,7 @@ new Chart(NetBalance, {
     <div class="p-2 border bg-light mt-2 mb-3">
       <p class="h5">Current Account</p>
       <p class="text-body">$6,100.00</p>
+      <div class="embed-responsive"id="chart"></div>
     
     </div>
     <div class="p-2 border bg-light">
@@ -112,10 +127,40 @@ new Chart(NetBalance, {
     <div class="p-2 border bg-light mt-2 mb-3">
       <p class="h5">Total Debt</p>
       <p class="text-body">$3,650.00</p>
+      
     </div>
     <div class="p-2 border bg-light"><p class="h5">Investments</p>
       <p class="text-body">$2,342.00</p>
-      <canvas id="myChart" width="100" height="50"></canvas>
+
+</div>
+      </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script>
+  
+  var options = {
+
+    chart: {
+      type: 'area',
+      sparkline: {
+        enabled: true,
+      }
+    },
+
+    series: [{
+      name: 'sales',
+      data: [30,40,35,50,49,60,70,91,125]
+    }],
+  
+  }
+ 
+  
+  var chart = new ApexCharts(document.querySelector("#chart"), options);
+  
+  chart.render();
+  
+      </script>
       
     <script>
 
